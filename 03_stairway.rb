@@ -23,12 +23,14 @@ end
 
 def end_of_game
   actual_step = 1
+  count = 0
   until actual_step == 10
     puts "Tu es actuellement sur la marche #{actual_step}"
     dice = roll_dice
     actual_step = move(dice, actual_step)
+    count = count + 1
   end
-  puts "Houra ! tu as gagné !!"
+  puts "Houra ! tu as gagné en #{count} coups !"
 end
 
 def perform
