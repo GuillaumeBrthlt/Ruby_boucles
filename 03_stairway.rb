@@ -38,7 +38,3 @@ def perform
 end
 
 perform
-
-
-
-  
